@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Mohammed Khaled - Frontend Developer. Projects, resume, contact info and more."
+    />
+    <meta
+      name="keywords"
+      content="Mohammed Khaled, frontend developer, portfolio, web development, HTML, CSS, JavaScript"
+    />
+
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Fontawesome -->
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!-- Calendar -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>Mohammed Khaled</title>
+  </head>
+  <body>
+    <header id="hero-section">
+      <!-- logo -->
+      <img src="/images/name-logo-k.png" id="logo" />
+
+      <!-- hero section text -->
+      <div class="hero-container">
+        <div class="hero-text">
+          <b>Hello, I'm</b>
+          <h1>Mohammed Khaled</h1>
+          <p>Frontend Developer</p>
+        </div>
+
+        <!-- about me buttons -->
+
+        <div id="about-me">
+          <button class="button" onclick="openPopup()">About Me</button>
+        </div>
+
+        <!-- POPUP MODAL HTML -->
+        <div id="aboutPopup" class="popup-overlay">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3>About Me</h3>
+            <p>
+              Hi! I'm Mohammed Khaled,
+              <br />
+              <br />
+              I can help business owners and busy web developers design and
+              develop creative websites that align with their vision and
+              captivate visitors. With a strong foundation in front-end
+              technologies, I am eager to apply my skills and passionate about
+              learning and contributing to innovative projects in a professional
+              setting.
+            </p>
+            <div id="skills">
+              <ul>
+                <li>#JavaScript</li>
+                <li>#React.js</li>
+                <li>#Redux</li>
+                <li>#HTML</li>
+                <li>#CSS</li>
+                <li>#Tailwind</li>
+                <li>#Git</li>
+                <li>#GitHub</li>
+                <li>#Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- social media links -->
+
+        <div class="social-links">
+          <ul>
+            <li class="linkedin-icon">
+              <a
+                href="https://www.linkedin.com/in/mohammed-khaled-3071182a8/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="gmail-icon">
+              <a href="mailto:mohdkhaled1031@gmail.com" target="_blank"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+            <li class="github-icon">
+              <a href="https://github.com/mohammeddkhaled" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="instagram-icon">
+              <a
+                href="https://www.instagram.com/md_khaled.official/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="download-btn">
+          <a href="/assests/Resume.pdf" download="Mohammed_khaled_cv.pdf"
+            >Download CV</a
+          >
+        </button>
+
+        <!-- <button class="all-projects">
+          <a href="projects.html"> All projects </a>
+        </button> -->
+
+        <div>
+          <button id="latest-project-button" onclick="scrollOneScreen()">
+            latest project
+          </button>
+          <img
+            src="/images/right-arrow.svg"
+            alt="Right Arrow"
+            class="latest-project-arrow"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- projects slider -->
+
+    <section
+      class="testimonial-section"
+      style="background-color: blanchedalmond"
+    >
+      <h2 class="testimonial-title">Selected project</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-card">
+              <div class="testimonial-image">
+                <img src="/images/project-background.png" alt="testimonial 3" />
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  A minimalist and interactive web application designed to help
+                  users set and track up to three daily goals. The app features
+                  a clean interface with a progress bar that updates as tasks
+                  are completed, encouraging users to maintain focus and
+                  productivity. Motivational quotes are displayed to inspire
+                  users throughout their day
+                </p>
+                <h2>Today's Focus : Task Management Web App</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-card">
+              <div class="testimonial-image">
+                <img src="/images/project-background.png" alt="testimonial 1" />
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  The Voting Pool App is a full-stack web application that
+                  allows users to create and participate in polls in a simple
+                  and interactive way. Users can register and log in to start
+                  voting on existing polls or create their own custom polls on
+                  any topic they like.<br />
+                  This app combines a user-friendly frontend with a secure,
+                  efficient backend, making it easy for anyone to engage in
+                  quick decision-making or gather opinions on anything—from
+                  favorite movies to serious community questions.
+                </p>
+                <h2>voting-pool-app</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-card">
+              <div class="testimonial-image">
+                <img src="/images/project-background.png" alt="testimonial 2" />
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  Created a frontend-only Amazon clone leveraging HTML, CSS, and
+                  JavaScript, featuring a dynamic homepage, product catalog UI,
+                  responsive design for multiple screen sizes, and user
+                  interface elements like header search, banners, and cart icons
+                  to simulate real-world e-commerce platforms.
+                </p>
+                <h2>Amazon clone (frontend project)</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-card">
+              <div class="testimonial-image">
+                <img src="/images/project-background.png" alt="testimonial 3" />
+              </div>
+              <div class="testimonial-text">
+                <p>
+                  Designed and built a Tic Tac Toe web game with JavaScript,
+                  featuring dynamic UI updates, real-time win/draw detection
+                  algorithms, and a responsive layout optimized for both desktop
+                  and mobile browsers
+                </p>
+                <h2>Tic Tac Toe: JavaScript Edition</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- projects slider end -->
+    <hr />
+
+    <section class="contact-section">
+      <div class="container">
+        <div>
+          <h2>Contact Me</h2>
+          <p>Fill out the form to get in touch.</p>
+        </div>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <i class="fas fa-user">Name</i>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <i class="fas fa-at">Email</i>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <i class="fas fa-comment-dots">Message</i>
+            <textarea id="message" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- footer -->
+    <footer>
+      <!-- footer icons -->
+
+      <div class="logo-container" onclick="scrollToTop()" title="Scroll to Top">
+        <div class="logo-tooltip">TopUp ↑</div>
+        <i class="fas fa-rocket logo-icon"></i>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-icon">
+          <ul>
+            <li class="linkedin-icon">
+              <i class="fab fa-linkedin-in"></i>
+              <a
+                href="https://www.linkedin.com/in/mohammed-khaled-3071182a8/"
+                target="_blank"
+                >Linkedin.com</a
+              >
+            </li>
+
+            <li class="gmail-icon">
+              <i class="far fa-envelope"></i>
+              <a href="mailto:mohdkhaled1031@gmail.com" target="_blank"
+                >@Gmail.com</a
+              >
+            </li>
+
+            <li class="github-icon">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/mohammeddkhaled" target="_blank"
+                >GitHub.co</a
+              >
+            </li>
+
+            <li class="instagram-icon">
+              <i class="fab fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/md_khaled.official/"
+                target="_blank"
+                >Instagram.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- logo container -->
+
+        <!-- <div
+          class="logo-container"
+          onclick="scrollToTop()"
+          title="Scroll to Top"
+        >
+          <div class="logo-tooltip">TopUp ↑</div>
+          <i class="fas fa-rocket logo-icon"></i>
+        </div> -->
+
+        <!-- footer buttons -->
+
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="\assests\Resume.pdf" download="Mohammed_khaled_cv.pdf"
+                >Download CV</a
+              >
+            </li>
+
+            <!-- <li>
+              <a href="projects.html"> All projects </a>
+            </li> -->
+
+            <!-- <li>
+              <a href="about.html"> About Me </a>
+            </li> -->
+
+            
+              <a class="button" onclick="openPopup()">About Me</a>
+           
+
+            <!-- POPUP MODAL HTML -->
+            <div id="aboutPopup" class="popup-overlay">
+              <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h3>About Me</h3>
+                <p>
+                  Hi! I'm Mohammed Khaled,
+                  <br />
+                  <br />
+                  I can help business owners and busy web developers design and
+                  develop creative websites that align with their vision and
+                  captivate visitors. With a strong foundation in front-end
+                  technologies, I am eager to apply my skills and passionate
+                  about learning and contributing to innovative projects in a
+                  professional setting.
+                </p>
+                <div id="skills">
+                  <ul>
+                    <li>#JavaScript</li>
+                    <li>#React.js</li>
+                    <li>#Redux</li>
+                    <li>#HTML</li>
+                    <li>#CSS</li>
+                    <li>#Tailwind</li>
+                    <li>#Git</li>
+                    <li>#GitHub</li>
+                    <li>#Terminal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <!-- footer-text  -->
+
+      <p id="reserved">Mohammed Khaled &copy; 2025 All rights reserved.</p>
+
+      <p id="love">Made with love ❤️ by Mohammed Khaled</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
