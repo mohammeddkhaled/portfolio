@@ -63,7 +63,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   status.style.color = "#ccc";
 
   try {
-    const res = await fetch('https://portfolio-backend-blpr.onrender.com/contact', {
+    const res = await fetch("http://localhost:3000/submit", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
