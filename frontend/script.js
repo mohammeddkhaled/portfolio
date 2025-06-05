@@ -64,7 +64,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
   try {
     const res = await fetch("https://portfolio-backend-2o6z.onrender.com/submit", {
-      method: 'GET',
+      method: 'post',
       headers: {
         'Content-Type': 'application/json',
       },
