@@ -8,12 +8,12 @@ const PORT = process.env.PORT || 3000;
 
 // Enable CORS for your frontend URLs (add your deployed frontend URL here)
 app.use(cors({
-  origin: 'https://mohammedkhaled-portfolio.netlify.app',
+  origin: 'https://mohammedkhaled-portfolio.netlify.app/',
   methods: ['GET', 'POST'],
   credentials: true
 }));
 
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 app.use(express.json());
 
 
