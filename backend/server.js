@@ -11,7 +11,7 @@ app.use(cors({
     origin: [
         'http://127.0.0.1:5500',
         'http://localhost:5500',
-        'https://mohammedkhaled-portfolio.netlify.app', // your deployed frontend URL
+        'https://mohammedkhaled-portfolio.netlify.app/', // your deployed frontend URL
         // Add your Render or other deployed frontend URLs here when deployed
     ],
 }));
