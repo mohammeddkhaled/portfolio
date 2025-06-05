@@ -9,9 +9,9 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS for your frontend URLs (add your deployed frontend URL here)
 app.use(cors({
     origin: [
-        'http://127.0.0.1:5500',
-        'http://localhost:5500',
         'https://mohammedkhaled-portfolio.netlify.app/', // your deployed frontend URL
+        // 'http://127.0.0.1:5500',
+        // 'http://localhost:5500',
         // Add your Render or other deployed frontend URLs here when deployed
     ],
 }));
