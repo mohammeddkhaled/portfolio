@@ -44,47 +44,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// contact form
-document.getElementById('contact-form').addEventListener('submit', async function (e) {
-  e.preventDefault();
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-  const status = document.getElementById('form-status');
-
-  if (!name || !email || !message) {
-    status.textContent = "Please fill all fields.";
-    status.style.color = "red";
-    return;
-  }
-
-  status.textContent = "Sending...";
-  status.style.color = "#ccc";
-
-  try {
-    const res = await fetch("http://localhost:3000/submit", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, message })
-    });
-
-    const data = await res.json();
-    if (res.ok) {
-      status.textContent = data.message;
-      status.style.color = "#0f0";
-      document.getElementById('contact-form').reset();
-    } else {
-      status.textContent = data.message || "Something went wrong!";
-      status.style.color = "red";
-    }
-  } catch (err) {
-    status.textContent = "Network error!";
-    status.style.color = "red";
-  }
-});
 
 //scroll to topUp 
 function scrollToTop() {
