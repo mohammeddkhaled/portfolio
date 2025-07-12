@@ -409,21 +409,6 @@ header {
   }
 }
 
-.view-project {
-  display: inline;
-  padding: 8px 10px;
-
-  background-color: #00bcd4;
-  color: #101522;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-
-.view-project:hover {
-  background-color: #12393d;
-  color: white;
-}
 
 /*////////////////////////////////////////////////*/
 
