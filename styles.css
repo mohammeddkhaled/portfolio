@@ -514,7 +514,7 @@ footer hr {
   header {
     max-width: 100vw;
     height: 85vh;
-    padding: 32px 0px 0px 32px;
+    padding: 64px 0px 0px 32px;
     display: flex;
   }
 
@@ -557,7 +557,7 @@ footer hr {
   header {
     max-width: 100vw;
     height: 80vh;
-    padding: 32px 0px 0px 24px;
+    padding: 64px 0px 0px 24px;
     display: flex;
   }
 
@@ -599,7 +599,7 @@ footer hr {
   header {
     max-width: 100vw;
     height: 70vh;
-    padding: 32px 0px 0px 16px;
+    padding: 64px 0px 0px 16px;
     display: flex;
   }
 
@@ -657,7 +657,7 @@ footer hr {
   header {
     max-width: 100vw;
     height: 60vh;
-    padding: 32px 0px 0px 12px;
+    padding: 64px 0px 0px 12px;
     display: flex;
   }
 
