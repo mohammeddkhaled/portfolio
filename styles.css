@@ -48,10 +48,10 @@ body {
 /* header */
 header {
   max-width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background: #101522;
   margin: 0px;
-  padding: 64px 20px 20px 64px;
+  padding: 64px 20px 0px 64px;
   display: flex;
 }
 
@@ -61,6 +61,7 @@ header {
   font-size: 16px;
   margin: 0px;
   width: 600px;
+  line-height: 2;
 }
 
 .hero-text h2 {
@@ -152,7 +153,7 @@ header {
   cursor: pointer;
   border-radius: 12px;
   border: none;
-  margin: 150px 0 0 300px;
+  margin: 100px 0 0 300px;
 }
 .download-btn:hover {
   background: linear-gradient(120deg, #c4d8da, #00bcd4 100%);
@@ -479,7 +480,7 @@ footer hr {
     width: 500px;
   }
   .download-btn {
-    margin: 130px 0 0 300px;
+    margin: 60px 0 0 300px;
   }
 }
 
@@ -499,7 +500,7 @@ footer hr {
   }
   .download-btn {
     padding: 6px 12px;
-    margin: 110px 0 0 250px;
+    margin: 30px 0 0 250px;
   }
 
   .fa-linkedin-in,
@@ -513,7 +514,7 @@ footer hr {
 @media (max-width: 785px) {
   header {
     max-width: 100vw;
-    height: 85vh;
+    height: 100vh;
     padding: 64px 0px 0px 32px;
     display: flex;
   }
@@ -538,7 +539,7 @@ footer hr {
   }
   .social-links {
     left: 0px;
-    top: 350px;
+    top: 430px;
   }
 
   .fa-linkedin-in,
@@ -556,14 +557,15 @@ footer hr {
 @media (max-width: 725px) {
   header {
     max-width: 100vw;
-    height: 80vh;
-    padding: 64px 0px 0px 24px;
+    height: 100vh;
+    padding: 80px 0px 0px 24px;
     display: flex;
   }
 
   .hero-image {
     width: 240px;
     height: 300px;
+    top: 130px;
   }
 
   .hero-text p {
@@ -580,7 +582,7 @@ footer hr {
     font-size: 24px;
   }
   .social-links {
-    top: 300px;
+    top: 390px;
   }
 
   .fa-linkedin-in,
@@ -598,8 +600,8 @@ footer hr {
 @media (max-width: 650px) {
   header {
     max-width: 100vw;
-    height: 70vh;
-    padding: 64px 0px 0px 16px;
+    height: 100vh;
+    padding: 80px 0px 0px 16px;
     display: flex;
   }
 
@@ -623,7 +625,7 @@ footer hr {
   }
   .social-links {
     left: 0px;
-    top: 265px;
+    top: 350px;
   }
   .social-links ul li {
     margin: 0 10px;
@@ -656,14 +658,14 @@ footer hr {
 
   header {
     max-width: 100vw;
-    height: 60vh;
-    padding: 64px 0px 0px 12px;
+    height: 100vh;
+    padding: 80px 0px 0px 12px;
     display: flex;
   }
 
   .hero-image {
     width: 130px;
-    height: 200px;
+    height: 250px;
   }
 
   .hero-text p {
@@ -681,7 +683,7 @@ footer hr {
   }
   .social-links {
     left: -30px;
-    top: 265px;
+    top: 370px;
   }
   .social-links ul li {
     margin: 0 8px;
@@ -722,7 +724,7 @@ footer hr {
 
   .hero-image {
     width: 130px;
-    height: 180px;
+    height: 200px;
   }
 
   .hero-text p {
@@ -740,7 +742,7 @@ footer hr {
   }
   .social-links {
     left: -30px;
-    top: 250px;
+    top: 335px;
   }
   
   .download-btn {
