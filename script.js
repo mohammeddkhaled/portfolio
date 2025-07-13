@@ -1,27 +1,3 @@
-// scroll to bottom
-function scrollOneScreen() {
-  window.scrollBy({
-    top: window.innerHeight,
-    behavior: 'smooth'
-  });
-}
-
-// about me
-function openPopup() {
-  document.getElementById('aboutPopup').style.display = 'block';
-}
-
-function closePopup() {
-  document.getElementById('aboutPopup').style.display = 'none';
-}
-
-//close popup on outside click
-window.onclick = function (e) {
-  const popup = document.getElementById('aboutPopup');
-  if (e.target === popup) {
-    popup.style.display = 'none';
-  }
-};
 
 // project slider
 window.addEventListener('DOMContentLoaded', function () {
@@ -43,13 +19,18 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 });
+// Toggle project details
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".toggle-details-btn");
 
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const details = button.nextElementSibling;
+      details.classList.toggle("show");
 
-//scroll to topUp 
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+      button.textContent = details.classList.contains("show")
+        ? "Hide Details"
+        : "View Details";
+    });
   });
-}
-
+});

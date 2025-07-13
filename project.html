@@ -1,55 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>project</title>
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <nav class="navbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Fontawesome -->
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!-- Calendar -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body style="background-color: #101522">
+    <nav class="navbar">
       <div>
-        <img src="" alt="Logo" class="nav-logo" />
+        <img src="/images/favicon.png" alt="Logo" class="nav-logo" />
       </div>
 
       <ul class="nav-links">
-        <li><a href="\index.html">Home</a></li>
-        <li><a href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk">Resume</a></li>
-        <li><a href="#contact" onclick="openPopup()">AboutMe</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk"
+            >Resume</a
+          >
+        </li>
+        <li><a href="about.html">AboutMe</a></li>
       </ul>
     </nav>
+    <!--  project section -->
 
+    <h1 id="projects-section-title">My Projects</h1>
 
-         <!-- POPUP MODAL HTML -->
-      <div id="aboutPopup" class="popup-overlay">
-        <div class="popup-content">
-          <span class="close-btn" onclick="closePopup()">&times;</span>
-          <h3>About Me</h3>
-          <p>
-            Hi! I'm Mohammed Khaled,
-            <br />
-            <br />
-            I can help business owners and busy web developers design and
-            develop creative websites that align with their vision and captivate
-            visitors. With a strong foundation in front-end technologies, I am
-            eager to apply my skills and passionate about learning and
-            contributing to innovative projects in a professional setting.
-          </p>
-          <div id="skills">
-            <ul>
-              <li>#JavaScript</li>
-              <li>#React.js</li>
-              <li>#Redux</li>
-              <li>#HTML</li>
-              <li>#CSS</li>
-              <li>#Tailwind</li>
-              <li>#Git</li>
-              <li>#GitHub</li>
-              <li>#Terminal</li>
-            </ul>
+    <section class="projects-section">
+
+      <!-- Project 1 //////////////////////////////////////-->
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/focus_0n_today.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">focus on today</h3>
+
+          <div class="project-links">
+            <a href="https://todays-focus.netlify.app/" target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/todays-focus"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              A minimalist and interactive web application designed to help
+              users set and track up to three daily goals. The app features a
+              clean interface with a progress bar that updates as tasks are
+              completed, encouraging users to maintain focus and productivity.
+              Motivational quotes are displayed to inspire users throughout
+              their day
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
           </div>
         </div>
       </div>
-</body>
+      <!-- Project 2 /////////////////////////////////////-->
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/profile card.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">profile-card</h3>
+
+          <div class="project-links">
+            <a href="https://profilescardd.netlify.app/" target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/profile-card"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              The Profile Card project is a clean and modern UI component that
+              presents user information in a visually appealing card layout. It
+              includes the user's profile picture, name, short bio, and links to
+              social media. The card is fully responsive and includes hover
+              effects for interactive engagement. Built using HTML, CSS Flexbox,
+              and minimal JavaScript for animations.
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 /////////////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/health care website.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">healthcare website</h3>
+
+          <div class="project-links">
+            <a href="https://healtcaree.netlify.app/" target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/healtcare-website"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              A responsive and user-friendly healthcare website designed to
+              provide essential medical services and information to users. The
+              site includes dedicated sections for services offered (like
+              general checkups, diagnostics, telemedicine, etc.), an about
+              section that introduces the healthcare providers or facility, and
+              a contact form for appointments or inquiries.
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 ////////////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/voting_pool_app.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">voting poll app</h3>
+
+          <div class="project-links">
+            <a href="#" target="_blank">🔗 Live Demo</a>
+            <a
+              href="https://github.com/mohammeddkhaled/voting-poll-app"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              The Voting Pool App is a full-stack web application that allows
+              users to create and participate in polls in a simple and
+              interactive way. Users can register and log in to start voting on
+              existing polls or create their own custom polls on any topic they
+              like.<br />
+              This app combines a user-friendly frontend with a secure,
+              efficient backend, making it easy for anyone to engage in quick
+              decision-making or gather opinions on anything—from favorite
+              movies to serious community questions.
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React.js</span>
+              <span>Redux</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 //////////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/e commerce card.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">E commerce card</h3>
+
+          <div class="project-links">
+            <a href="https://ecommercecardd.netlify.app/" target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/E-commerce-card"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              A sleek and interactive product card built for advertising a
+              JavaScript course, tool, or product in an e-commerce layout. The
+              card is designed to grab attention and provide essential product
+              information like the title, image, brief description, pricing, and
+              call-to-action buttons such as “Buy Now”.
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 6 ////////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/tic-tac-toe.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">tic tac toe</h3>
+
+          <div class="project-links">
+            <a href="https://tiic-tac-tooe.netlify.app/" target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/tic-tac-toe"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              Designed and built a Tic Tac Toe web game with JavaScript,
+              featuring dynamic UI updates, real-time win/draw detection
+              algorithms, and a responsive layout optimized for both desktop and
+              mobile browsers
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 7 ///////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/twilight_basket.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">twilight basket</h3>
+
+          <div class="project-links">
+            <a href="https://twilightbasket.netlify.app/" target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/Twilight-Basket"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              Developed Twilight Basket, a 2D browser game where players catch
+              falling stars and avoid danger balls using a movable basket. Built
+              with the HTML5 Canvas API, featuring smooth animations, collision
+              detection, score tracking, and a confetti effect for high scores.
+              Designed for both desktop and mobile with a responsive layout and
+              clean UI for an engaging gameplay experience
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 8 /////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/jarvis.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Jarvis</h3>
+
+          <div class="project-links">
+            <a href="#" target="_blank">🔗 Live Demo</a>
+            <a href="https://github.com/mohammeddkhaled/jarvis" target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              JARVIS is a personal AI virtual assistant inspired by Marvel’s
+              iconic J.A.R.V.I.S. It is designed to perform voice-activated
+              tasks and respond intelligently to user commands. Built using
+              python, JARVIS can greet users, fetch weather, open websites, tell
+              the time/date, answer basic questions, and execute pre-defined
+              tasks—all through voice interaction
+            </p>
+            <div class="skills-used">
+              <span>python</span>
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 9 /////////////////////////////-->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/web scraping.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Web Scraper</h3>
+
+          <div class="project-links">
+            <a href="#" target="_blank">🔗 Live Demo</a>
+            <a
+              href="https://github.com/mohammeddkhaled/web-scraping"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              A custom-built web scraping tool developed using Python and
+              BeautifulSoup/Selenium to extract structured data from dynamic
+              websites. This scraper automates data collection for use cases
+              like product listings, student results, job postings, and more.
+              The scraped data is stored in CSV or JSON format and can be
+              integrated into dashboards or further analysis pipelines.
+            </p>
+            <div class="skills-used">
+              <span>Python</span>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 10////////////////////////////////////////////////// -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/portfolio.png" alt="Project Image" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Portfolio</h3>
+
+          <div class="project-links">
+            <a
+              href="https://mohammedkhaled-portfolio.netlify.app"
+              target="_blank"
+              >🔗 Live Demo</a
+            >
+            <a
+              href="https://github.com/mohammeddkhaled/portfolio"
+              target="_blank"
+              >📂 GitHub</a
+            >
+          </div>
+
+          <button class="toggle-details-btn">View Details</button>
+
+          <div class="project-details">
+            <p class="project-description">
+              A fully responsive personal portfolio website designed and
+              developed to showcase my projects, skills, and experience as a
+              Frontend/Full Stack Developer. The site includes smooth
+              navigation, interactive project sections, and a downloadable
+              resume. Built with modern web technologies and optimized for
+              performance and accessibility across all devices.
+            </p>
+            <div class="skills-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
