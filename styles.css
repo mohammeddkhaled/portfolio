@@ -895,3 +895,165 @@ footer hr {
     font-size: 24px;
   }
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* Contact Section */
+
+
+
+.container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #101522;
+
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart-icon {
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.heart-icon.liked {
+  color: red;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  
+}
+
+.green-dot {
+  height: 14px;
+  width: 14px;
+  background-color: green;
+  border-radius: 100px;
+  position: absolute;
+  top: 80px;
+  left: 155px;
+}
+
+.content {
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid slategrey;
+  margin-top: 12px;
+}
+
+.content h1 {
+  font-size: 24px;
+  padding: 40px 0px 0px 0px;
+  color:#00bcd4 ;
+}
+.content h3 {
+  font-size: 20px;
+  padding: 0px 0px 20px 0px;
+  color: gray;
+  font-weight: 100;
+}
+
+.content button  {
+
+  background: linear-gradient(110deg, #00bcd4, #c4d8da);
+  color: black;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: rgba(255, 255, 255, 0.07)k;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content h2 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
+}

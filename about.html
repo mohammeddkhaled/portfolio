@@ -15,6 +15,14 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Calendar -->
     <link
       rel="stylesheet"
@@ -28,6 +36,7 @@
     />
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar">
       <div>
         <img src="/images/favicon.png" alt="Logo" class="nav-logo" />
@@ -36,37 +45,96 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="project.html">Projects</a></li>
-        <li><a href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk">Resume</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk"
+            >Resume</a
+          >
+        </li>
       </ul>
     </nav>
+    <!-- profile card -->
 
+    <div class="container">
+      <div class="card">
+        <div class="icon">
+          <div class="heart">
+            <i class="fa-solid fa-heart heart-icon"> </i>
+          </div>
+          <div class="share">
+            <i class="fa-solid fa-share"></i>
+          </div>
+        </div>
 
+        <div class="profil">
+          <div class="pic">
+            <img src="/images/image.png" alt="Profile Picture" />
+            <div class="green-dot"></div>
+          </div>
+        </div>
 
+        <div class="content">
+          <h1>mohammed khaled</h1>
+          <h3>frontend developer</h3>
 
+          <button id="openProfile">view full profile</button>
+        </div>
+      </div>
+    </div>
 
+    <!-- Modal -->
+    <div class="modal" id="profileModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Mohammed Khaled</h2>
+        <p><strong>Education:</strong> B.E. in Computer Science Engineering</p>
+        <p>
+          <strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js, Git
+        </p>
+        <p>
+          <strong>Projects:</strong> Portfolio Website, E-commerce Card, Jarvis
+          AI Assistant
+        </p>
+        <p><strong>Tools:</strong> VS Code, GitHub, Figma, Netlify</p>
+        <p><strong>Contact:</strong> khaled@example.com</p>
+      </div>
+    </div>
 
-     <!-- footer -->
+    <!-- footer -->
     <footer>
       <div id="contact">
         <h2>contact</h2>
       </div>
       <!-- footer social media icons -->
       <div class="footer-icon">
-        <a href="https://www.linkedin.com/in/mohammed-khaled-3071182a8/" target="_blank"  ><i class="fab fa-linkedin-in"></i></a>
-        <a href="mailto:mohdkhaled1031@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-        <a href="https://github.com/mohammeddkhaled" target="_blank" ><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/md_khaled.official/" target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a
+          href="https://www.linkedin.com/in/mohammed-khaled-3071182a8/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="mailto:mohdkhaled1031@gmail.com" target="_blank"
+          ><i class="far fa-envelope"></i
+        ></a>
+        <a href="https://github.com/mohammeddkhaled" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/md_khaled.official/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
       </div>
       <!-- footer buttons -->
       <div class="footer-links">
         <ul>
           <li>
-            <a href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk" >Download CV</a>
+            <a
+              href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk"
+              >Download CV</a
+            >
           </li>
-          <li >
+          <li>
             <a href="index.html">Home</a>
           </li>
-          <li >
+          <li>
             <a href="about.html">About</a>
           </li>
           <li>
@@ -77,8 +145,8 @@
       <hr />
       <!-- footer-text  -->
       <div class="footer-text">
-        <p id="reserved" >&copy; Mohammed Khaled 2025 All rights reserved.</p>
-        <p id="love" >Made with love ❤️ by Mohammed Khaled</p>
+        <p id="reserved">&copy; Mohammed Khaled 2025 All rights reserved.</p>
+        <p id="love">Made with love ❤️ by Mohammed Khaled</p>
       </div>
     </footer>
   </body>
