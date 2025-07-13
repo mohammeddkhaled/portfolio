@@ -868,10 +868,27 @@ footer hr {
 @media (max-width: 800px) {
   .project-card {
     flex: 1 1 100%;
-    max-width: 100%;
-  }
-  .project-card {
     max-width: 400px;
-   
+  }
+}
+
+@media (max-width: 400px) {
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 300px;
+  }
+
+  #projects-section-title {
+    font-size: 32px;
+  }
+
+  .project-image {
+    width: 240px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  .project-title {
+    font-size: 24px;
   }
 }
