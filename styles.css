@@ -1038,10 +1038,18 @@ footer hr {
   margin-bottom: 20px;
 }
 
-.modal-content p {
-  margin: 12px 0;
-  font-size: 16px;
-  line-height: 1.6;
+ .skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+ }
+
+.modal-content .skills span {
+  padding: 4px 8px;
+  background-color: #00bcd4;
+  border-radius: 12px;
+  color: #101522;
+  font-weight: bold;
 }
 
 .close {
