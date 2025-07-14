@@ -1038,11 +1038,11 @@ footer hr {
   margin-bottom: 20px;
 }
 
- .skills{
+.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
- }
+}
 
 .modal-content .skills span {
   padding: 4px 8px;
