@@ -147,19 +147,26 @@ header {
 /* /////////////////////////////////////////////////////////////// */
 /* buttons style */
 
-.download-btn {
+.hero-btn {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.download-btn,
+.about-btn {
   background: linear-gradient(110deg, #00bcd4, #c4d8da);
   padding: 8px 16px;
   cursor: pointer;
   border-radius: 12px;
   border: none;
-  margin: 100px 0 0 300px;
+  margin-right: 20px;
 }
-.download-btn:hover {
+.download-btn:hover,
+.about-btn:hover {
   background: linear-gradient(120deg, #c4d8da, #00bcd4 100%);
   transition: all 0.3s ease-in-out;
 }
-.download-btn a {
+.download-btn a,
+.about-btn a {
   text-decoration: none;
   color: #101522;
   font-weight: bold;
@@ -478,12 +485,23 @@ footer hr {
   .hero-text p {
     width: 500px;
   }
-  .download-btn {
-    margin: 60px 0 0 300px;
+  .hero-btn {
+    margin-top: 10px;
+    margin-left: 180px;
+  }
+
+  .social-links {
+    position: absolute;
+    left: 0px;
+    top: 530px;
   }
 }
 
 @media (max-width: 950px) {
+  header {
+    padding: 64px 20px 0px 32px;
+  }
+
   .hero-image {
     width: 350px;
     height: 400px;
@@ -497,27 +515,25 @@ footer hr {
     color: #00bcd4;
     font-size: 32px;
   }
-  .download-btn {
-    padding: 6px 12px;
-    margin: 30px 0 0 250px;
+
+  .hero-btn {
+    margin-top: 30px;
+    margin-left: 130px;
+  }
+
+  .social-links {
+    top: 560px;
   }
 
   .fa-linkedin-in,
   .fa-envelope,
   .fa-github,
   .fa-instagram {
-    font-size: 35px;
+    font-size: 36px;
   }
 }
 
 @media (max-width: 785px) {
-  header {
-    max-width: 100vw;
-    height: 100vh;
-    padding: 64px 0px 0px 32px;
-    display: flex;
-  }
-
   .hero-image {
     width: 300px;
     height: 350px;
@@ -536,31 +552,28 @@ footer hr {
     color: #00bcd4;
     font-size: 28px;
   }
+
+  .hero-btn {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
   .social-links {
     left: 0px;
-    top: 430px;
+    top: 500px;
   }
 
   .fa-linkedin-in,
   .fa-envelope,
   .fa-github,
   .fa-instagram {
-    font-size: 28px;
-  }
-  .download-btn {
-    padding: 4px 8px;
-    margin: 55px 0 0 250px;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 725px) {
   header {
-    max-width: 100vw;
-    height: 100vh;
-    padding: 80px 0px 0px 24px;
-    display: flex;
+    padding: 80px 0px 0px 20px;
   }
-
   .hero-image {
     width: 240px;
     height: 300px;
@@ -580,28 +593,25 @@ footer hr {
     color: #00bcd4;
     font-size: 24px;
   }
-  .social-links {
-    top: 390px;
+
+  .hero-btn {
+    margin-top: 50px;
+    margin-left: 40px;
   }
 
-  .fa-linkedin-in,
-  .fa-envelope,
-  .fa-github,
-  .fa-instagram {
-    font-size: 24px;
-  }
   .download-btn {
-    padding: 4px 8px;
-    margin: 55px 0 0 240px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    top: 500px;
   }
 }
 
 @media (max-width: 650px) {
   header {
-    max-width: 100vw;
-    height: 100vh;
-    padding: 80px 0px 0px 16px;
-    display: flex;
+    padding: 100px 0px 0px 20px;
   }
 
   .hero-image {
@@ -624,21 +634,7 @@ footer hr {
   }
   .social-links {
     left: 0px;
-    top: 350px;
-  }
-  .social-links ul li {
-    margin: 0 10px;
-  }
-
-  .fa-linkedin-in,
-  .fa-envelope,
-  .fa-github,
-  .fa-instagram {
-    font-size: 24px;
-  }
-  .download-btn {
-    padding: 4px 8px;
-    margin: 30px 0 0 200px;
+    top: 550px;
   }
 }
 
@@ -653,13 +649,6 @@ footer hr {
 
   .navbar .nav-links li {
     margin-left: 10px;
-  }
-
-  header {
-    max-width: 100vw;
-    height: 100vh;
-    padding: 80px 0px 0px 12px;
-    display: flex;
   }
 
   .hero-image {
@@ -681,18 +670,8 @@ footer hr {
     font-size: 18px;
   }
   .social-links {
-    left: -30px;
-    top: 370px;
+    top: 550px;
   }
-  .social-links ul li {
-    margin: 0 8px;
-  }
-  .download-btn {
-    padding: 6px 12px;
-    font-size: 12px;
-    margin: 35px 0 0 150px;
-  }
-
   .footer-links a {
     font-size: 12px;
     color: #00bcd4;
@@ -738,14 +717,39 @@ footer hr {
     font-size: 16px;
   }
   .social-links {
-    left: -30px;
-    top: 335px;
+    top: 530px;
+  }
+}
+@media (max-width: 350px) {
+  .hero-image {
+    display: none;
   }
 
-  .download-btn {
-    padding: 5px 10px;
-    font-size: 10px;
-    margin: 35px 0 0 150px;
+  .navbar .nav-links li a {
+    margin-left: 0px;
+    font-size: 6px;
+  }
+
+  .fa-linkedin-in,
+  .fa-envelope,
+  .fa-github,
+  .fa-instagram {
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    font-size: 8px;
+    color: #00bcd4;
+    text-decoration: none;
+    margin-left: 4px;
+  }
+
+  .footer-links {
+    margin-block: 16px;
+  }
+
+  .footer-text {
+    font-size: 4px;
   }
 }
 
@@ -900,15 +904,12 @@ footer hr {
 
 /* Contact Section */
 
-
-
 .container {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #101522;
-
 }
 
 .card {
@@ -925,7 +926,6 @@ footer hr {
   color: white;
   transition: all 0.3s ease;
 }
-
 
 .icon {
   display: flex;
@@ -960,7 +960,6 @@ footer hr {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  
 }
 
 .green-dot {
@@ -983,7 +982,7 @@ footer hr {
 .content h1 {
   font-size: 24px;
   padding: 40px 0px 0px 0px;
-  color:#00bcd4 ;
+  color: #00bcd4;
 }
 .content h3 {
   font-size: 20px;
@@ -992,8 +991,7 @@ footer hr {
   font-weight: 100;
 }
 
-.content button  {
-
+.content button {
   background: linear-gradient(110deg, #00bcd4, #c4d8da);
   color: black;
   border: none;
@@ -1006,7 +1004,7 @@ footer hr {
 
 /* Modal styles */
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 99;
   left: 0;
@@ -1022,8 +1020,8 @@ footer hr {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  background-color: rgba(255, 255, 255, 0.07)k;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.07) k;
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 90%;
@@ -1034,7 +1032,6 @@ footer hr {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
 
 .modal-content h2 {
   color: #00bcd4;
