@@ -13,8 +13,8 @@
     />
 
     <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/custome.css" />
 
     <!-- Fontawesome -->
     <link
@@ -42,15 +42,15 @@
         <img src="/images/favicon.png" alt="Logo" class="nav-logo" />
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
+        <li><a href="/src/index.html">Home</a></li>
+        <li><a href="/src/project.html">Projects</a></li>
         <li>
           <a
             href="https://drive.google.com/file/d/16C-zhMfvLC1UwgESB5dOKAot1uPI_cfD/view?usp=drivesdk"
             >Resume</a
           >
         </li>
-        <li><a href="about.html">AboutMe</a></li>
+        <li><a href="/src/about.html">AboutMe</a></li>
       </ul>
     </nav>
     <!-- Hero Section -->
@@ -203,11 +203,53 @@
         <div class="swiper-button-prev"></div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 px-4 bg-[#101522]">
+      <div class="max-w-xl mx-auto bg-[#101522] shadow-md p-6 rounded-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center text-[#00bcd4]">
+          Contact Me
+        </h2>
+        <form id="contact-form" class="space-y-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-3 border border-[#00bcd4] rounded focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#00bcd4]"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-3 border border-[#00bcd4] rounded focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#00bcd4]"
+          />
+          <input type="text" name="_gotcha" style="display: none" />
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            rows="5"
+            class="w-full p-3 border border-[#00bcd4] rounded focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#00bcd4]"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-[#00bcd4] text-[ #101522] font-semibold py-3 rounded hover:bg-[#2c3132] transition"
+          >
+            Send Message
+          </button>
+          <p
+            id="form-status"
+            class="text-center text-sm text-gray-600 mt-2"
+          ></p>
+        </form>
+      </div>
+    </section>
+
     <!-- footer -->
     <footer>
-      <div id="contact">
-        <h2>contact</h2>
-      </div>
       <!-- footer social media icons -->
       <div class="footer-icon">
         <a
@@ -235,13 +277,13 @@
             >
           </li>
           <li>
-            <a href="index.html">Home</a>
+            <a href="/src/index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="/src/about.html">About</a>
           </li>
           <li>
-            <a href="project.html">Projects</a>
+            <a href="/src/project.html">Projects</a>
           </li>
         </ul>
       </div>
@@ -254,5 +296,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/script.js"></script>
   </body>
 </html>

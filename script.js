@@ -19,65 +19,44 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 });
-// Toggle project details
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".toggle-details-btn");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const details = button.nextElementSibling;
-      details.classList.toggle("show");
+// contact form
 
-      button.textContent = details.classList.contains("show")
-        ? "Hide Details"
-        : "View Details";
-    });
-  });
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
 
+  if (!form || !status) return; 
 
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    status.textContent = "Sending...";
 
-// Like (heart) functionality
-const heartIcon = document.querySelector(".heart-icon");
-heartIcon.addEventListener("click", () => {
-  heartIcon.classList.toggle("liked");
-});
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
 
-// Share functionality
-const shareBtn = document.querySelector(".share");
-shareBtn.addEventListener("click", async () => {
-  const shareData = {
-    title: "Mohammed Khaled – Frontend Developer",
-    text: "Check out this awesome developer profile!",
-    url: window.location.href, // share current page
-  };
+    try {
+      const response = await fetch("https://formspree.io/f/xyzpwnrl", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-  try {
-    if (navigator.share) {
-      await navigator.share(shareData);
-    } else {
-      alert("Share not supported on this device/browser.");
-    }
-  } catch (err) {
-    console.error("Share failed:", err);
-  }
-}); 
-
-// Modal logic
-  const openBtn = document.getElementById("openProfile");
-  const modal = document.getElementById("profileModal");
-  const closeBtn = document.querySelector(".close");
-
-  openBtn.addEventListener("click", () => {
-    modal.style.display = "block";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
+      if (response.ok) {
+        status.textContent = "✅ Message sent successfully!";
+        form.reset();
+      } else {
+        status.textContent = "❌ Something went wrong. Please try again.";
+      }
+    } catch (err) {
+      status.textContent = "❌ Network error. Please try again.";
+      console.error(err);
     }
   });
+});
