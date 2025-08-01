@@ -10,6 +10,7 @@ body {
 }
 /* navbar */
 .navbar {
+  max-width: 1660px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,12 +48,13 @@ body {
 /* /////////////////////////////////////////////// */
 /* header */
 header {
-  max-width: 100vw;
-  height: 100vh;
+  max-width: 1660px;
+  height: min-content;
   background: #101522;
   margin: 0px;
-  padding: 64px 20px 0px 64px;
+  padding: 64px 20px 300px 64px;
   display: flex;
+  position: relative;
 }
 
 .hero-text p {
@@ -216,7 +218,8 @@ header {
 
 /* slider styles */
 .testimonial-section {
-  height: 100vh;
+  max-width: 1660px;
+  height: max-content;
   background-color: #101522;
 }
 
@@ -422,7 +425,7 @@ header {
 /* footer */
 
 footer {
-  max-width: 100vw;
+  max-width: 1660px;
   min-height: max-content;
   background-color: #101522;
 }
@@ -757,7 +760,7 @@ footer hr {
 /* Projects Section */
 
 .projects-section {
-  max-width: 100vw;
+  max-width: 1660px;
   margin: 0px;
   padding: 20px;
   display: flex;
@@ -772,6 +775,7 @@ footer hr {
   font-size: 48px;
   margin-bottom: 2rem;
   color: #333;
+  max-width: 1660px;
 }
 
 .project-wrapper {
@@ -920,6 +924,9 @@ footer hr {
   align-items: center;
   justify-content: center;
   background-color: #101522;
+  max-width: 1660px;
+  height: min-content;
+  padding-block:100px ;
 }
 
 .card {
