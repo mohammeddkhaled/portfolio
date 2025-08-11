@@ -180,14 +180,13 @@ header {
   height: 500px;
   position: absolute;
   right: 0px;
-  top: 100px;
+
 }
 
 /* ////////////////////////////////////////////// */
 /* social media icon styles */
 .social-links {
   position: absolute;
-  left: 0px;
   top: 500px;
 }
 .social-links ul {
@@ -495,7 +494,6 @@ footer hr {
 
   .social-links {
     position: absolute;
-    left: 0px;
     top: 530px;
   }
 }
@@ -561,7 +559,6 @@ footer hr {
     margin-left: 40px;
   }
   .social-links {
-    left: 0px;
     top: 500px;
   }
 
@@ -580,7 +577,6 @@ footer hr {
   .hero-image {
     width: 240px;
     height: 300px;
-    top: 130px;
   }
 
   .hero-text p {
@@ -636,7 +632,6 @@ footer hr {
     font-size: 20px;
   }
   .social-links {
-    left: 0px;
     top: 550px;
   }
 }
